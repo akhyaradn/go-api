@@ -1,6 +1,7 @@
 package database
 
 import (
+	"api/models"
 	"fmt"
 	"log"
 
@@ -27,7 +28,7 @@ func StartDB() {
 		log.Fatal("failed to connect database")
 	}
 
-	// db.Debug().AutoMigrate(models.Order{}, models.Item{})
+	db.Debug().AutoMigrate(models.Order{}, models.Item{})
 }
 
 func GetDB() *gorm.DB {
