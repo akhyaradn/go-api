@@ -1,6 +1,4 @@
-Go API hacktiv8
-
-=================
+# Go API hacktiv8
 
 1. Create database sesuai yang ada didalam **db.go**
 2. Install dependencies **go mod download**
